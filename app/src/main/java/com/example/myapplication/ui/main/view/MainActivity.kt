@@ -38,56 +38,14 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun setupViewModel() {
-        val factory = ViewModelFactory(ApiHelper(RetrofitBuilder.apiService))
-        viewModel = ViewModelProvider(this, factory)[MainViewModel::class.java]
+        TODO("Not yet implemented")
     }
 
     private fun setupUI() {
-        adapter = MainAdapter(arrayListOf());
-
-        recyclerView = findViewById(R.id.recyclerView)
-        recyclerView.let {
-            it.layoutManager = LinearLayoutManager(this)
-            it.adapter = adapter
-            it.addItemDecoration(
-                DividerItemDecoration(
-                    recyclerView.context,
-                    (recyclerView.layoutManager as LinearLayoutManager).orientation
-                )
-            )
-        }
-
-        progressBar = findViewById(R.id.progressBar)
+        TODO("Not yet implemented")
     }
 
     private fun setupObservers() {
-        viewModel.getCovidStats().observe(this, {
-            it?.let { resource ->
-                when (resource.status) {
-                    Status.SUCCESS -> {
-                        recyclerView.visibility = View.VISIBLE
-                        progressBar.visibility = View.GONE
-                        resource.data?.let { it -> retrieveList(it) }
-                    }
-                    Status.ERROR -> {
-                        recyclerView.visibility = View.VISIBLE
-                        progressBar.visibility = View.GONE
-                        Toast.makeText(this, it.message, Toast.LENGTH_LONG).show()
-                    }
-                    Status.LOADING -> {
-                        progressBar.visibility = View.VISIBLE
-                        recyclerView.visibility = View.GONE
-                    }
-                }
-            }
-        })
-    }
-
-    @SuppressLint("NotifyDataSetChanged")
-    private fun retrieveList(covidRecords: List<CovidRecord>) {
-        adapter.apply {
-            addUsers(covidRecords)
-            notifyDataSetChanged()
-        }
+        TODO("Not yet implemented")
     }
 }

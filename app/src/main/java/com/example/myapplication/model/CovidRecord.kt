@@ -1,7 +1,5 @@
 package com.example.myapplication.model
 
-data class CovidRecord(
-    val country: String,
-    val infected: String,
-    val deceased: String
-)
+
+// TODO make me a model class :)
+class CovidRecord
