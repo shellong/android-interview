@@ -5,8 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitBuilder {
 
-    // Full endpoint: ask Szymon during interview.
-    private const val BASE_URL = "https://api.apify.com/"
+    private const val BASE_URL = "https://reqres.in/api/"
 
     private fun getRetrofit(): Retrofit {
         return Retrofit.Builder()

@@ -4,37 +4,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="80dp">
+    android:layout_height="60dp">
 
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="contentDescription" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textViewCountryName"
+        android:id="@+id/textViewUserName"
         style="@style/TextAppearance.AppCompat.Large"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Poland" />
+        tools:text="user name" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textViewInfected"
+        android:id="@+id/textViewUserEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textViewCountryName"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCountryName"
-        tools:text="infected" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textViewDeceased"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textViewInfected"
-        app:layout_constraintTop_toBottomOf="@+id/textViewInfected"
-        tools:text="deceased" />
+        app:layout_constraintStart_toStartOf="@+id/textViewUserName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserName"
+        tools:text="user email" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

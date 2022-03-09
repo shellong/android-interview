@@ -1,23 +1,13 @@
 package com.example.myapplication.ui.main.view
 
-import android.annotation.SuppressLint
 import android.os.Bundle
-import android.view.View
 import android.widget.ProgressBar
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
-import com.example.myapplication.data.api.ApiHelper
-import com.example.myapplication.data.api.RetrofitBuilder
-import com.example.myapplication.model.CovidRecord
-import com.example.myapplication.ui.base.ViewModelFactory
 import com.example.myapplication.ui.main.adapter.MainAdapter
 import com.example.myapplication.ui.main.viewmodel.MainViewModel
-import com.example.myapplication.utils.Status
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,14 +28,14 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun setupViewModel() {
-        TODO("Not yet implemented")
+        TODO()
     }
 
     private fun setupUI() {
-        TODO("Not yet implemented")
+        TODO()
     }
 
     private fun setupObservers() {
-        TODO("Not yet implemented")
+        TODO()
     }
 }
